@@ -1,28 +1,4 @@
-<!-- Header -->
-<header>
-    <img src="header-footer-border.svg" alt="Gold Chandelier Border" class="header-border">
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About Us</a>
-        <a href="shop.html">Shop</a>
-        <a href="blog.html">Blog</a>
-        <a href="contact.html">Contact Us</a>
-        <a href="faq.html">FAQ</a>
-    </nav>
-    <img src="header-footer-border.svg" alt="Gold Chandelier Border" class="header-border">
-</header>
-
-<!-- Footer -->
-<footer>
-    <img src="header-footer-border.svg" alt="Gold Chandelier Border" class="footer-border">
-    <p>&copy; 2024 Erotic Elegance. All Rights Reserved.</p>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About Us</a>
-        <a href="shop.html">Shop</a>
-        <a href="blog.html">Blog</a>
-        <a href="contact.html">Contact Us</a>
-        <a href="faq.html">FAQ</a>
-    </nav>
-    <img src="header-footer-border.svg" alt="Gold Chandelier Border" class="footer-border">
-</footer>
+<!-- Save this as header-footer-border.svg -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 10" preserveAspectRatio="none">
+  <path fill="#FFD700" d="M0,0 C50,20 50,-10 100,0 L100,10 L0,10 Z" />
+</svg>
