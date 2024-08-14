@@ -2,9 +2,10 @@
 body {
     background-color: #000000;
     color: #FFD700;
-    font-family: 'Yatra One', sans-serif;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    line-height: 1.6;
 }
 
 a {
@@ -13,67 +14,59 @@ a {
 }
 
 a:hover {
-    color: #9235b4;
+    text-decoration: underline;
 }
 
 header, footer {
-    background-color: #000000;
-    border-bottom: 2px solid #FFD700;
-    padding: 20px;
-    text-align: center;
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-h1, h2, h3 {
+    background-color: #9235b4;
     color: #FFD700;
-    font-family: 'Yatra One', sans-serif;
+    padding: 20px 0;
+    text-align: center;
+    border-top: 5px solid #FFD700;
+    border-bottom: 5px solid #FFD700;
+}
+
+header h1, footer p {
+    margin: 0;
+    font-family: 'Yatra One', cursive;
+}
+
+.navbar {
+    margin: 10px 0;
+}
+
+.navbar a {
+    margin: 0 15px;
+    font-family: 'Yatra One', cursive;
+    font-size: 18px;
 }
 
 .container {
+    padding: 20px;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px;
+}
+
+h2 {
+    font-family: 'Yatra One', cursive;
+    color: #FFD700;
 }
 
 button {
-    background-color: #9235b4;
+    background-color: #FFD700;
+    color: #9235b4;
     border: none;
-    color: #FFD700;
     padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
+    font-family: 'Yatra One', cursive;
     cursor: pointer;
-    border-radius: 5px;
 }
 
 button:hover {
-    background-color: #FFD700;
-    color: #9235b4;
+    background-color: #e0b200;
 }
 
-footer {
-    border-top: 2px solid #FFD700;
-    padding: 10px 0;
-}
-
-/* Responsive Styles */
-@media (max-width: 768px) {
-    nav ul li {
-        display: block;
-        margin: 10px 0;
-        text-align: center;
-    }
+.chandelier-border {
+    background: linear-gradient(90deg, #FFD700, transparent, #FFD700);
+    height: 3px;
+    margin: 20px 0;
 }
