@@ -1,211 +1,103 @@
-/* Global Styles */
 body {
-    font-family: 'Playfair Display', serif;
-    background-color: #f5f5f5;
-    color: #333;
+    background-color: #000000;
+    color: #FFD700;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
 }
 
 header {
-    background-color: #3b2a5f;
-    padding: 1rem 0;
+    background-color: #9235b4;
+    padding: 20px;
+    text-align: center;
 }
 
-header nav ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
+header h1 {
+    font-family: 'Yatra One', cursive;
+    color: #FFD700;
     margin: 0;
+    font-size: 2.5em;
+}
+
+nav ul {
+    list-style: none;
     padding: 0;
 }
 
-header nav ul li {
-    margin: 0 15px;
+nav ul li {
+    display: inline;
+    margin-right: 20px;
 }
 
-header nav ul li a {
-    color: #fff;
+nav ul li a {
+    color: #FFD700;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.hero {
+    padding: 100px 20px;
+    text-align: center;
+    background-color: #000000;
+    background-image: url('hero-image.jpg'); /* Replace with your image */
+    background-size: cover;
+    background-position: center;
+    color: #FFD700;
+}
+
+.hero h2 {
+    font-family: 'Yatra One', cursive;
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+
+.button {
+    background-color: #FFD700;
+    color: #9235b4;
+    padding: 10px 20px;
     text-decoration: none;
     font-weight: bold;
-    font-size: 1.1rem;
+    font-size: 1.2em;
+    border-radius: 5px;
 }
 
-header nav ul li a:hover {
-    color: #ffd700;
+.button:hover {
+    background-color: #9235b4;
+    color: #FFD700;
 }
 
-main {
-    padding: 2rem;
+.content {
+    padding: 50px 20px;
+}
+
+.content h2 {
+    font-family: 'Yatra One', cursive;
+    font-size: 2.5em;
+    color: #FFD700;
+}
+
+.content p {
+    font-size: 1.2em;
+}
+
+.product h3 {
+    font-family: 'Yatra One', cursive;
+    font-size: 2em;
+    margin-bottom: 10px;
 }
 
 footer {
-    background-color: #3b2a5f;
-    color: #fff;
+    background-color: #9235b4;
+    padding: 20px;
     text-align: center;
-    padding: 1rem 0;
+    color: #FFD700;
     position: fixed;
     width: 100%;
     bottom: 0;
-}
-
-/* Home Page Styles */
-h1 {
-    font-family: 'Yatra One', cursive;
-    color: #ffd700;
-    text-align: center;
-    font-size: 2.5rem;
-}
-
-h2 {
-    font-family: 'Yatra One', cursive;
-    color: #3b2a5f;
-    font-size: 2rem;
-    margin-bottom: 1rem;
-}
-
-p {
-    font-size: 1.1rem;
-    margin-bottom: 1rem;
-}
-
-a.button {
-    display: inline-block;
-    padding: 10px 20px;
-    margin: 20px 0;
-    background-color: #ffd700;
-    color: #3b2a5f;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-}
-
-a.button:hover {
-    background-color: #3b2a5f;
-    color: #ffd700;
-}
-
-/* Shop Page Styles */
-h3 {
-    font-family: 'Yatra One', cursive;
-    color: #ffd700;
-    margin-bottom: 1rem;
-    font-size: 1.8rem;
-}
-
-.product {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    margin-bottom: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.product h4 {
-    font-family: 'Playfair Display', serif;
-    color: #3b2a5f;
-    margin-bottom: 10px;
-    font-size: 1.5rem;
-}
-
-.product p {
-    margin-bottom: 10px;
-    font-size: 1rem;
-}
-
-.product .price {
-    font-weight: bold;
-    color: #ffd700;
-    font-size: 1.2rem;
-}
-
-.product .add-to-cart {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #ffd700;
-    color: #3b2a5f;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-}
-
-.product .add-to-cart:hover {
-    background-color: #3b2a5f;
-    color: #ffd700;
-}
-
-/* Blog Page Styles */
-.article {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    margin-bottom: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.article h4 {
-    font-family: 'Playfair Display', serif;
-    color: #3b2a5f;
-    margin-bottom: 10px;
-    font-size: 1.5rem;
-}
-
-.article p {
-    margin-bottom: 10px;
-    font-size: 1rem;
-}
-
-.article a {
-    color: #ffd700;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.article a:hover {
-    color: #3b2a5f;
-}
-
-/* Contact and FAQ Page Styles */
-.contact-form, .faq {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-}
-
-.contact-form h4, .faq h4 {
-    font-family: 'Yatra One', cursive;
-    color: #3b2a5f;
-    margin-bottom: 15px;
-    font-size: 1.8rem;
-}
-
-.contact-form label, .faq p {
-    font-size: 1rem;
-    color: #333;
-}
-
-.contact-form input[type="text"], .contact-form input[type="email"], .contact-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.contact-form input[type="submit"] {
-    background-color: #ffd700;
-    color: #3b2a5f;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
-}
-
-.contact-form input[type="submit"]:hover {
-    background-color: #3b2a5f;
-    color: #ffd700;
 }
