@@ -1,51 +1,55 @@
-/* Button Styles */
-.btn {
-    background-color: #9235b4;
+/* Global Styles */
+body {
+    background-color: #000;
     color: #FFD700;
-    padding: 10px 20px;
-    border-radius: 5px;
+    font-family: 'Yatra One', cursive;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header, footer {
+    text-align: center;
+    background-color: #9235b4;
+    padding: 20px 0;
+    position: relative;
+}
+
+header img.header-border, footer img.footer-border {
+    width: 100%;
+    height: auto;
+}
+
+nav a {
+    color: #FFD700;
+    text-decoration: none;
+    margin: 0 15px;
     font-weight: bold;
-    text-transform: uppercase;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+h1, h2, h3 {
+    font-family: 'Yatra One', cursive;
+    color: #FFD700;
+}
+
+a {
+    color: #FFD700;
     text-decoration: none;
 }
 
-.btn:hover {
-    background-color: #FFD700;
+a:hover {
     color: #9235b4;
+    text-decoration: underline;
 }
 
-/* Form Styles */
-form {
-    max-width: 600px;
-    margin: 20px auto;
-    background-color: #9235b4;
-    padding: 20px;
-    border-radius: 10px;
-}
-
-form label {
-    font-weight: bold;
-}
-
-form input[type="text"], form input[type="email"], form textarea {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border-radius: 5px;
-    border: 1px solid #FFD700;
-}
-
-form input[type="submit"] {
-    background-color: #FFD700;
-    color: #9235b4;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
-}
-
-form input[type="submit"]:hover {
-    background-color: #9235b4;
-    color: #FFD700;
+/* Specific Page Styles */
+.main-content {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
 }
