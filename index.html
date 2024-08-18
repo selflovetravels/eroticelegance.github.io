@@ -3,53 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Discover luxurious and unique exotic dancewear at Erotic Elegance. Shop our collection of fishnet stockings, platform heels, and sexy costumes designed to make you shine.">
-    <title>Erotic Elegance - Exotic Dancewear Boutique</title>
+    <title>Erotic Elegance</title>
     <link rel="stylesheet" href="CSS/styles.css">
-    <script>
-        // Asynchronous Font Loading
-        const loadFont = () => {
-            const link = document.createElement('link');
-            link.href = 'font/PinyonScript-Regular.ttf';
-            link.rel = 'stylesheet';
-            document.head.appendChild(link);
-        };
-        loadFont();
-    </script>
+    <style>
+        @font-face {
+            font-family: 'CustomFont';
+            src: url('font/PinyonScript-Regular.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+    </style>
 </head>
 <body>
-    <header>
+    <header id="header">
         <nav>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#shop">Shop</a></li>
-                <li><a href="#blog">Blog</a></li>
-                <li><a href="#contact">Contact Us</a></li>
-                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#home" onclick="navigateTo('home')">Home</a></li>
+                <li><a href="#about" onclick="navigateTo('about')">About Us</a></li>
+                <li><a href="#shop" onclick="navigateTo('shop')">Shop</a></li>
+                <li><a href="#blog" onclick="navigateTo('blog')">Blog</a></li>
+                <li><a href="#contact" onclick="navigateTo('contact')">Contact Us</a></li>
+                <li><a href="#faq" onclick="navigateTo('faq')">FAQ</a></li>
             </ul>
         </nav>
-        <h1>Erotic Elegance</h1>
     </header>
 
-    <main id="content">
-        <!-- Home Section -->
-        <section id="home" class="section">
-            <h2>Welcome to Erotic Elegance</h2>
+    <main id="main-content">
+        <section id="home" class="content-section">
+            <h1 class="title">Welcome to Erotic Elegance</h1>
             <p>Your Ultimate Exotic Dancewear Boutique</p>
             <p>Step into a world where luxury meets allure. Discover our exquisite collection designed for those who dare to shine. From fishnet stockings to platform heels, find the perfect pieces to elevate your performance and express your individuality.</p>
-            <a href="#shop" class="cta-button">Shop Now</a>
+            <a href="#shop" class="cta" onclick="navigateTo('shop')">Shop Now</a>
         </section>
 
-        <!-- About Us Section -->
-        <section id="about" class="section">
+        <section id="about" class="content-section">
             <h2>About Erotic Elegance</h2>
-            <p>Where Elegance Meets Seduction</p>
-            <p>At Erotic Elegance, we believe every performer deserves to feel confident, empowered, and irresistibly sexy. Our curated collection of dancewear and accessories is crafted to highlight your unique style and grace.</p>
+            <p>At Erotic Elegance, we believe every performer deserves to feel confident, empowered, and irresistibly sexy. Our curated collection of dancewear and accessories is crafted to highlight your unique style and grace. Join us in celebrating the art of exotic dance with sophistication and flair.</p>
+            <p><strong>Our Mission:</strong> To provide high-quality, luxurious dancewear that empowers you to shine on and off the stage.</p>
+            <a href="#home" class="cta" onclick="navigateTo('home')">Back to Home</a>
         </section>
 
-        <!-- Shop Section -->
-        <section id="shop" class="section">
+        <section id="shop" class="content-section">
             <h2>Shop</h2>
             <div class="product">
                 <h3>Fishnet Stockings</h3>
@@ -63,61 +57,83 @@
                 <h3>Sexy Costumes</h3>
                 <p>Transform into your fantasy with our daring and unique costumes, tailored to make you the star of the show.</p>
             </div>
+            <a href="#home" class="cta" onclick="navigateTo('home')">Back to Home</a>
         </section>
 
-        <!-- Blog Section -->
-        <section id="blog" class="section">
+        <section id="blog" class="content-section">
             <h2>Blog</h2>
             <article>
-                <h3>Mastering the Art of Seduction on Stage</h3>
-                <p>Dive into the world of exotic dance with our tips, tricks, and insights.</p>
+                <h3>The Allure of Exotic Dance</h3>
+                <p>Dive into the world of exotic dance with our tips, tricks, and insights. From performance guides to self-care tips, our blog is your go-to resource for all things exotic.</p>
+                <p><strong>Latest Posts:</strong></p>
+                <ul>
+                    <li>Mastering the Art of Seduction on Stage</li>
+                    <li>Top 5 Self-Care Rituals for Performers</li>
+                    <li>How to Choose the Perfect Dancewear</li>
+                </ul>
             </article>
-            <article>
-                <h3>Top 5 Self-Care Rituals for Performers</h3>
-                <p>Stay in top shape with our essential self-care tips.</p>
-            </article>
+            <a href="#home" class="cta" onclick="navigateTo('home')">Back to Home</a>
         </section>
 
-        <!-- Contact Us Section -->
-        <section id="contact" class="section">
+        <section id="contact" class="content-section">
             <h2>Contact Us</h2>
             <form>
                 <label for="name">Name:</label>
-                <input type="text" id="name" name="name">
+                <input type="text" id="name" name="name" required>
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email">
+                <input type="email" id="email" name="email" required>
                 <label for="message">Message:</label>
-                <textarea id="message" name="message"></textarea>
-                <button type="submit">Send</button>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Submit</button>
             </form>
+            <a href="#home" class="cta" onclick="navigateTo('home')">Back to Home</a>
         </section>
 
-        <!-- FAQ Section -->
-        <section id="faq" class="section">
+        <section id="faq" class="content-section">
             <h2>Frequently Asked Questions</h2>
-            <details>
-                <summary>How can I place an order?</summary>
+            <div class="faq-item">
+                <h3>How can I place an order?</h3>
                 <p>Browse our shop, add items to your cart, and proceed to checkout. It’s that simple!</p>
-            </details>
-            <details>
-                <summary>What are your shipping options?</summary>
-                <p>We offer standard and express shipping worldwide.</p>
-            </details>
-            <details>
-                <summary>Can I return or exchange an item?</summary>
-                <p>Yes, we accept returns and exchanges within 30 days of purchase.</p>
-            </details>
-            <details>
-                <summary>How do I care for my dancewear?</summary>
+            </div>
+            <div class="faq-item">
+                <h3>What are your shipping options?</h3>
+                <p>We offer standard and express shipping worldwide. Check our Shipping Policy for more details.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Can I return or exchange an item?</h3>
+                <p>Yes, we accept returns and exchanges within 30 days of purchase. Please refer to our Return Policy for more information.</p>
+            </div>
+            <div class="faq-item">
+                <h3>How do I care for my dancewear?</h3>
                 <p>Follow the care instructions on each product page to ensure your dancewear stays in perfect condition.</p>
-            </details>
+            </div>
+            <a href="#home" class="cta" onclick="navigateTo('home')">Back to Home</a>
         </section>
     </main>
 
-    <footer>
+    <footer id="footer">
         <p>&copy; 2024 Erotic Elegance. All rights reserved.</p>
+        <nav>
+            <ul>
+                <li><a href="#home" onclick="navigateTo('home')">Home</a></li>
+                <li><a href="#about" onclick="navigateTo('about')">About Us</a></li>
+                <li><a href="#shop" onclick="navigateTo('shop')">Shop</a></li>
+                <li><a href="#blog" onclick="navigateTo('blog')">Blog</a></li>
+                <li><a href="#contact" onclick="navigateTo('contact')">Contact Us</a></li>
+                <li><a href="#faq" onclick="navigateTo('faq')">FAQ</a></li>
+            </ul>
+        </nav>
     </footer>
 
-    <script src="app.js"></script>
+    <script>
+        function navigateTo(section) {
+            document.querySelectorAll('.content-section').forEach(section => section.style.display = 'none');
+            document.getElementById(section).style.display = 'block';
+        }
+
+        window.onload = function() {
+            navigateTo('home');
+        };
+    </script>
 </body>
 </html>
