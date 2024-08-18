@@ -1,7 +1,6 @@
-/* Import Custom Font */
 @font-face {
-    font-family: 'CustomBodyFont';
-    src: url('./font/InesRegular-eK1x.ttf') format('truetype'); /* Replace with the path to your custom font */
+    font-family: 'CustomParagraphFont';
+    src: url('../font/InesRegular-eK1x.ttf') format('truetype'); /* Replace with the path to your custom font */
     font-weight: normal;
     font-style: normal;
 }
