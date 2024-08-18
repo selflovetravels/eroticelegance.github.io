@@ -19,7 +19,7 @@ h1, h2, h3 {
 
 /* Adjust the size of the H1 title */
 h1.title {
-    font-size: 12em; /* Increased size for more impact */
+    font-size: 10em; /* Increased size for more impact */
     color: #FFD700;
     margin-bottom: 20px;
 }
