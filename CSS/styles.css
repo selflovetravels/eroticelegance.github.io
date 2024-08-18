@@ -85,7 +85,7 @@ h1.title {
 /* Main Content with Background Image */
 #main-content {
     padding: 20px;
-    background-image: url('images/your-image.jpg'); /* Replace with the path to your image */
+    background-image: url('../assets/dancer_titple.jpg'); /* Replace with the path to your image */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
