@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'CustomParagraphFont';
-    src: url('../font/InesRegular-eK1x.ttf') format('truetype'); /* Replace with the path to your custom font */
+    src: url('./font/InesRegular-eK1x.ttf') format('truetype'); /* Replace with the path to your custom font */
     font-weight: normal;
     font-style: normal;
 }
