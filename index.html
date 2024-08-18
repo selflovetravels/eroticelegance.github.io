@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Erotic Elegance</title>
-    <link rel="stylesheet" href="CSS/styles.css">
-    <style>
-        @font-face {
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Erotic Elegance</title>
+  <link rel="stylesheet" href="CSS/styles.css">
+  <link rel="preload" href="font/custom-font.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <style>
+@font-face {
             font-family: 'CustomFont';
             src: url("../font/PinyonScript-Regular.ttf") format('embedded-opentype'),
             src: url("../font/PinyonScript-Regular.ttf") format('woff2'),
@@ -16,74 +17,78 @@
             font-weight: normal;
             font-style: normal;
         }
-    </style>
+  </style>
 </head>
 <body>
-    <header>
-        <div class="header-content">
-            <h1>Erotic Elegance</h1>
-            <nav>
-                <ul>
-                    <li><a href="#home" onclick="loadPage('home')">Home</a></li>
-                    <li><a href="#about" onclick="loadPage('about')">About Us</a></li>
-                    <li><a href="#shop" onclick="loadPage('shop')">Shop</a></li>
-                    <li><a href="#blog" onclick="loadPage('blog')">Blog</a></li>
-                    <li><a href="#contact" onclick="loadPage('contact')">Contact Us</a></li>
-                    <li><a href="#faq" onclick="loadPage('faq')">FAQ</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+  <header class="site-header">
+    <h1 class="site-title">Erotic Elegance</h1>
+    <nav class="site-nav">
+      <a href="#home">Home</a>
+      <a href="#about">About Us</a>
+      <a href="#shop">Shop</a>
+      <a href="#blog">Blog</a>
+      <a href="#contact">Contact Us</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+  </header>
 
-    <main id="content">
-        <!-- Content will be loaded here dynamically -->
-    </main>
+  <main>
+    <section id="home" class="section">
+      <h2>Welcome to Erotic Elegance</h2>
+      <p>Your Ultimate Exotic Dancewear Boutique</p>
+      <a href="#shop" class="btn">Shop Now</a>
+    </section>
 
-    <footer>
-        <p>&copy; 2024 Erotic Elegance. All rights reserved.</p>
-    </footer>
+    <section id="about" class="section">
+      <h2>About Us</h2>
+      <p>Where Elegance Meets Seduction</p>
+      <p>At Erotic Elegance, we believe every performer deserves to feel confident, empowered, and irresistibly sexy.</p>
+    </section>
 
-    <script>
-        const pages = {
-            'home': `
-                <section id="home">
-                    <h2>Welcome to Erotic Elegance</h2>
-                    <p>Your Ultimate Exotic Dancewear Boutique. Discover our exquisite collection designed for those who dare to shine.</p>
-                    <a href="#shop" onclick="loadPage('shop')" class="cta-button">Shop Now</a>
-                </section>`,
-            'about': `
-                <section id="about">
-                    <h2>About Us</h2>
-                    <p>Where Elegance Meets Seduction. We believe every performer deserves to feel confident, empowered, and irresistibly sexy.</p>
-                </section>`,
-            'shop': `
-                <section id="shop">
-                    <h2>Shop</h2>
-                    <p>Browse our curated collection of luxurious dancewear, from fishnet stockings to platform heels and sexy costumes.</p>
-                </section>`,
-            'blog': `
-                <section id="blog">
-                    <h2>Blog</h2>
-                    <p>Explore tips, tricks, and insights in our blog. From performance guides to self-care rituals, we cover it all.</p>
-                </section>`,
-            'contact': `
-                <section id="contact">
-                    <h2>Contact Us</h2>
-                    <p>Have questions or need assistance? Reach out to us through our contact form or follow us on social media.</p>
-                </section>`,
-            'faq': `
-                <section id="faq">
-                    <h2>FAQ</h2>
-                    <p>Find answers to your most common questions about our products, shipping, and returns.</p>
-                </section>`
-        };
+    <section id="shop" class="section">
+      <h2>Shop</h2>
+      <p>Discover our stunning collection of dancewear and accessories.</p>
+      <!-- Add product listings here -->
+    </section>
 
-        function loadPage(page) {
-            document.getElementById('content').innerHTML = pages[page];
-        }
+    <section id="blog" class="section">
+      <h2>Blog</h2>
+      <p>Insights and tips from the world of exotic dance.</p>
+      <!-- Add blog posts here -->
+    </section>
 
-        // Load the home page by default
-        loadPage('home');
-    </script>
+    <section id="contact" class="section">
+      <h2>Contact Us</h2>
+      <p>We're here to assist you with any questions or needs.</p>
+      <form>
+        <input type="text" placeholder="Name">
+        <input type="email" placeholder="Email">
+        <textarea placeholder="Message"></textarea>
+        <button type="submit" class="btn">Send</button>
+      </form>
+    </section>
+
+    <section id="faq" class="section">
+      <h2>FAQ</h2>
+      <p>Frequently Asked Questions</p>
+      <!-- Add FAQ content here -->
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2024 Erotic Elegance. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Single Page Application (SPA) Navigation
+    document.querySelectorAll('nav a').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
 </body>
 </html>
