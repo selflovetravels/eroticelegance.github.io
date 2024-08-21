@@ -9,7 +9,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'CustomBodyFont', Arial, sans-serif; /* Use the custom font for body text */
+    font-family: 'CustomParagraphFont', Arial, sans-serif; /* Use the custom font for body text */
     background-color: #000;
     color: #FFD700;
     line-height: 1.6;
